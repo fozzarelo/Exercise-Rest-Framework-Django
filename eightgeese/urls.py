@@ -16,9 +16,10 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 
-from goals.views import ListCreateGoals
+from goals.views import ListCreateGoals, ListCreateTasks
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^api/goals', ListCreateGoals.as_view())
+    url(r'^api/goals', ListCreateGoals.as_view()),
+    url(r'^api/tasks', ListCreateTasks.as_view())
 ]

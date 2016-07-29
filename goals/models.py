@@ -13,7 +13,7 @@ class Goal(models.Model):
 class Task(models.Model):
     name = models.CharField(max_length=250)
     completed = models.BooleanField(default=False)
-    goal = models.ForeignKey(Goal, related_name="tasks")
+    goal = models.ForeignKey(Goal, related_name="tasks", blank=True, null=True)
 
     created = models.DateTimeField(auto_now_add=True)
     # creator = models.ForeignKey(settings.AUTH_USER_MODEL)

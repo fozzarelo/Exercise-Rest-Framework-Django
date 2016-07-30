@@ -1,4 +1,3 @@
-from django.shortcuts import render
 from rest_framework import generics
 from goals.models import Goal, Task
 from goals.serializers import GoalSerializer, TaskSerializer

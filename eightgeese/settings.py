@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     'goals',
     'django_extensions',
     'rest_framework',
-    'corsheaders'
+    'corsheaders',
+    'psycopg2'
 ]
 
 MIDDLEWARE_CLASSES = [

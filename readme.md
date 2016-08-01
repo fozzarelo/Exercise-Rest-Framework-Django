@@ -22,5 +22,6 @@ Setup database:
 	Modify db in settings.py to your own dbname, username and password.
 	-> python manage.py migrate
 	
-Run server
+Run server:
+
 	-> python manage.py runserver
